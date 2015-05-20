@@ -1,0 +1,49 @@
+<div class="header">
+  <div class="container">
+    <h1>Облако инноваций</h1>
+    <p>Подключите ваши идеи к глобаному облаку</p>
+    <a class="btn" href="#">Читать дальше</a>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="container">
+    <ul>
+      <li>Регистрация</li>
+      <li>График</li>
+      <li>Спонсоры</li>
+      <li>О нас</li>
+      <li>Контакты</li>
+    </ul>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <img src="<%= asset_path 'cloud.svg' %>" />
+    <h2>Инновационная облачная конференция</h2>
+    <p>Свяжитесь с лучшими умами широкого спектра индустрии для обмена идеями и мозгового штурма новых решений сложных задач.</p>
+    <p>Здесь лидеры индустрии говорят о том, что работает (а что нет), поэтому вы сможете сохранить время в своих наиболее сложных проектах.</p>
+    <p>Узнайте о новейших изобретениях и технологиях, которые вы сможете использовать сразу, чтобы включиться в будущее.</p>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h2>Оставайтесь на связи</h2>
+    <p>Получать еженедельные идеи от инсайдеров индустрии.</p>
+
+    <%= form_for @signup do |f| %>
+      email: <%= f.text_field :email %><br />
+      <%= f.submit class: "btn", value: "Join" %>
+    <% end %>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <p>2015 &copy; Innovation Cloud Conference</p>
+    <p>Dmitry Sedov</p>
+  </div>
+</div>

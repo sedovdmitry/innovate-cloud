@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'signups#new'
   get '/thanks' => 'pages#thanks'
   resources :singups
   # The priority is based upon order of creation: first created -> highest priority.
