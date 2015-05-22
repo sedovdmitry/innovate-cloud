@@ -31,9 +31,9 @@
 <div class="jumbotron">
   <div class="container">
     <h2>Оставайтесь на связи</h2>
-    <p>Получать еженедельные идеи от инсайдеров индустрии.</p>
+    <p>Получать еженедельные идеи от лидеров индустрии.</p>
 
-    <%= form_for @signup do |f| %>
+    <%= form_for (@signup) do |f| %>
       email: <%= f.text_field :email %><br />
       <%= f.submit class: "btn", value: "Join" %>
     <% end %>
